@@ -1,5 +1,5 @@
 :root{--cream:#f6f6ee;--wine:#240d15;--rose:#c1a4a7;--blush:#dfc3c8;--blue:#7c97b4;--navy:#2a3744;--ink:#25292e;--gray:#5d6470;--mist:#eceef0;
---grad:linear-gradient(166deg,#b8c6d4,#2a3744);--head:'Jost','Resolve Sans',sans-serif;--serif:'Cormorant Garamond',serif;--body:'Montserrat',sans-serif}
+--grad:linear-gradient(166deg,#b8c6d4,#2a3744);--head:'Figtree','Resolve Sans',sans-serif;--serif:'Cormorant Garamond',serif;--body:'Montserrat',sans-serif}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
 body{background:var(--cream);color:var(--ink);font:300 18px/1.9 var(--body)}
 a{color:inherit;text-decoration:none}:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
@@ -123,3 +123,221 @@ footer{padding-top:65px}
 .strip{grid-template-columns:repeat(4,365px) 252px;grid-auto-columns:365px}
 .strip div{height:434px;aspect-ratio:auto}
 @media(max-width:960px){.strip{grid-template-columns:none;grid-auto-columns:70%}.strip div{height:auto;aspect-ratio:365/434}}
+
+/* ===== Figma sync (Nov 10) ===== */
+header{background:#7c97b4;backdrop-filter:none;border-bottom:0}
+header.home{background:#c1a4a7}
+header.sub nav{font-size:14px}header.sub .hbtns .btn{font-size:14px;padding:14px 26px}
+@media(max-width:960px){header.open{background:#7c97b4}header.home.open{background:#c1a4a7}}
+.fsec.g{background:var(--mist)}.fsec .ft.big p{font-size:25px;line-height:1.75}
+.contact{background:var(--mist);padding-bottom:108px}
+.contact .wrap.split p{font-size:25px;line-height:1.75}.contact .cdetails{font-size:25px}
+.faq-home .wrap.w{max-width:1268px}.faq-about .wrap.w{max-width:1326px}
+.nochev summary::after{display:none}
+.faqs.hd{padding-bottom:61px}.faqs.nosoc{padding-bottom:152px}
+.insta.only .head{margin-bottom:0}.insta.only{padding-bottom:62px}
+.faqs.top{padding-top:132px}.faqs.nosoc{padding-bottom:168px}
+.exp{background:var(--cream)}.fsec.club .ft p{max-width:560px}
+/* nav links sit to the left, next to the logo (all pages) */
+header nav{margin-left:auto;margin-right:clamp(24px,3.5vw,60px)}
+@media(max-width:960px){header nav{margin:0}}
+/* ===== Home page: exact values from the Figma export ===== */
+header.home{background:#7c97b4;padding-right:clamp(20px,4.1vw,71px)}
+header.home nav{gap:42px;margin-right:clamp(20px,1.7vw,29px)}
+header.home .hbtns{gap:20px}
+header.home .hbtns .btn{height:44px;padding:0;font-size:12px}
+header.home .hbtns .btn:first-child{width:197px}header.home .hbtns .btn:last-child{width:177px}
+@media(max-width:960px){header.home.open{background:#7c97b4}header.home .hbtns .btn{width:auto;padding:0 22px}header.home .hbtns .btn:first-child,header.home .hbtns .btn:last-child{width:auto}}
+.faq-home .wrap.w{max-width:min(1317px,calc(100% - 40px));padding:0;margin-left:max(20px,calc((100vw - 1317px)/2 + 25px));margin-right:0}
+footer .wrap>div:first-child p{max-width:380px}
+header.home nav{margin-right:clamp(0px,.5vw,9px)}
+/* ===== footer: exact positions from the Figma export ===== */
+@media(min-width:961px){
+footer .wrap{max-width:none;padding:0 0 0 11.69vw;grid-template-columns:35.36vw 14.45vw 21.65vw 1fr;gap:0}
+footer .legal{margin-right:11.69vw}
+}
+footer a{line-height:37px}footer p{line-height:24px}footer .brand{line-height:1.3}
+footer .wrap>div:first-child p{max-width:340px;font-size:18px}
+footer .soc a{background:#c1a4a7}
+
+/* ===== footer v2 (measured from the Figma exports) ===== */
+footer{padding-top:73px}
+footer h4{margin-bottom:18px}
+footer p+h4{margin-top:32px;margin-bottom:8px}
+footer .brand{margin-top:8px}
+footer .wrap>div:first-child p{font:400 19px/28px var(--body);color:var(--mist);max-width:365px;margin-top:16px}
+footer .soc{gap:20px;margin-top:8px}footer .soc a{width:29px;height:29px}
+.legal{color:rgba(236,238,240,.5);margin-top:40px;padding:34px 0 0;height:92px}
+footer{padding-top:77px}footer h4{margin-bottom:14px}footer p+h4{margin-top:34px;margin-bottom:4px}footer .brand{margin-top:4px}footer .soc{margin-top:10px}
+.legal{margin-top:41px;padding-top:32px;height:92px}
+footer .soc{margin-top:16px}
+/* ===== header v2 (from the Figma exports) ===== */
+header.home{background:rgba(124,151,180,.82)}
+header nav,header.sub nav,header.home nav{font-size:12px;gap:41px;margin-left:auto;margin-right:clamp(0px,.65vw,11px)}
+header nav a:last-child{margin-left:12px}
+header.sub{padding-right:clamp(20px,2.6vw,45px)}
+header.sub .hbtns .btn{width:175px;height:44px;padding:0;font-size:13px}
+@media(max-width:960px){header nav a:last-child{margin-left:0}header.sub .hbtns .btn{width:auto;padding:0 22px}header.home.open{background:#7c97b4}}
+header nav,header.sub nav,header.home nav{margin-right:clamp(0px,.4vw,7px)}
+header.home .hbtns{gap:22px}header.home .hbtns .btn:first-child{width:195px}header.home .hbtns .btn:last-child{width:175px}
+
+/* ===== page fixes v2 ===== */
+.faq-about .wrap.w{max-width:min(1317px,calc(100% - 40px));padding:0;margin-left:max(20px,calc((100vw - 1317px)/2 - 5px));margin-right:0}
+.faqs.nosoc{padding-bottom:83px}
+
+.arrows{background:#ac979b}
+/* ===== positioned text blocks (calibrated to the Figma exports) ===== */
+.fsec.pos .ft{align-self:start;padding-top:var(--pt,0px);padding-bottom:0}
+.fsec.pos .ft .eyebrow{margin:0 0 var(--emb,0px)}
+.fsec.pos .ft h2{margin:0 0 var(--hmb,40px);letter-spacing:var(--hls,-.01em)}
+.fsec.pos .ft p{line-height:38px;margin:0}
+.fsec.pos .ft p+p{margin-top:var(--pg,38px)}
+.fsec.pos .ft .btns{margin-top:var(--bmt,46px)}
+/* ===== positioned text blocks: sizes (unitless vars = px at 1728) ===== */
+.fsec.pos .ft{padding-right:24px}
+.fsec.pos .ft h2{font-size:min(calc(var(--h,64)*1px),calc(var(--h,64)*100vw/1728));white-space:nowrap}
+.fsec.pos .ft .eyebrow{font-size:min(calc(var(--e,16)*1px),calc(var(--e,16)*100vw/1728));letter-spacing:var(--els,.1em);line-height:1.2}
+.fsec.pos .ft p{font-size:min(calc(var(--pf,20)*1px),calc(var(--pf,20)*100vw/1728));max-width:var(--pw,656px)}
+@media(max-width:960px){.fsec.pos .ft h2{white-space:normal}}
+
+.fsec.pos .ft h2{letter-spacing:var(--hls,-.015em)}
+.fsec.pos .ft{padding-left:var(--pl,clamp(24px,5vw,90px))}
+.fsec.pos .ft h2{max-width:var(--hw,none);line-height:var(--hlh,1.1);white-space:var(--hws,nowrap)}
+@media(max-width:960px){.fsec.pos .ft h2{white-space:normal}}
+
+/* feature strip: icons cropped from the Figma export */
+.feat div{gap:0}.feat img{width:auto;height:auto;flex:none;display:block}
+.feat img.i1{margin-right:23px;width:61px;height:65px}.feat img.i2{margin-right:31px;margin-left:8px;width:62px;height:71px;transform:translateY(-5px)}.feat img.i3{margin-right:23px;margin-left:1px;width:66px;height:65px}
+
+.exp .wrap.w{padding-left:0}.exp{padding-top:170px}.exp h2{margin-bottom:70px}
+.fsec.club .btns{gap:21px}.fsec.club .btn{padding:0;height:44px}.fsec.club .btn:first-child{width:196px}.fsec.club .btn:last-child{width:176px}
+/* CTA (Begin your ascent) measured from the Figma exports */
+.cta{padding:118px 20px 0;height:446px}
+.cta h2{margin:0 0 38px;line-height:1.1}
+.cta p{font-size:20px;line-height:1.5;margin:0 0 46px}
+.cta .btns{gap:21px}.cta .btn{padding:0;height:44px}.cta .btn:first-child{width:196px}.cta .btn:last-child{width:176px}
+.cta h2{margin-bottom:41px}.cta p{margin-bottom:48px}.cta .btns{padding-right:46px}
+.hero.sm h1{letter-spacing:-.025em;position:relative;top:11px}
+.hero:not(.sm) h1{position:relative;top:-14px}
+/* contact left column (measured from the Figma export) */
+.contact .cl{padding-top:var(--pt,0px)}
+.contact .cl .eyebrow{font-size:min(18px,1.0417vw);letter-spacing:.25em;line-height:1.2;margin:0 0 var(--emb,0px);color:#6f7d8c}
+.contact .cl h2{font-size:min(78px,4.5139vw);line-height:1.1;margin:0 0 var(--hmb,0px);letter-spacing:-.015em;white-space:nowrap}
+.contact .cl p{font-size:min(25px,1.4468vw);line-height:38px;margin:0;color:var(--gray)}
+.contact .cl .cd{margin-top:25px}.contact .cl .cd.first{margin-top:var(--dmt,0px)}
+.contact .wrap.split .cl p{font-size:min(25px,1.4468vw);line-height:38px;margin:0;color:var(--gray)}
+.contact .wrap.split .cl .cd{margin-top:25px}.contact .wrap.split .cl .cd.first{margin-top:var(--dmt,0px)}
+.contact .cl{padding-top:0;margin-top:var(--pt,0px)}
+.contact .cl h2{font-size:min(75px,4.34vw)}
+.contact .cl h2{font-size:min(64px,3.7vw)}
+/* contact form card (measured from the Figma export) */
+.contact .cform{padding:100px 41px 0;row-gap:19px;column-gap:25px;min-height:674px;box-sizing:border-box}
+.contact .cform input{box-sizing:border-box;height:46px;padding:14px 14px 0;font-size:16px;line-height:1.2}
+.contact .cform .dd{margin-top:32px}
+.contact .cform .dd-btn{box-sizing:border-box;height:64px;padding:14px 14px 0;align-items:flex-start;font-size:16px;line-height:1.2}
+.contact .cform .dd li{box-sizing:border-box;height:50.5px;padding:16px 14px 0;line-height:1.2;font-size:14px}
+.contact .cform .btn{width:209px;height:54px;margin-top:40px}
+.contact .cform{row-gap:18px}
+.contact .cform input{height:47px;padding-top:7px}
+.contact .cform .dd li{padding-top:21px;border-bottom-color:rgba(37,41,46,.12)}
+.contact .cform .btn{margin-top:19px}
+.contact .cform input{padding-top:3px}.contact .cform .dd{margin-top:33px}.contact .cform .btn{margin-top:20px}
+/* FAQ (Home/About) from the Figma exports */
+.faqs .eyebrow{font-size:14px;margin-left:4px}
+.faqs h2{margin-top:11px}.faq{margin-top:53px}
+.exp{padding-bottom:72px}
+.faqs h2{margin-top:15px}.faqs.top{padding-top:134px}
+
+/* Home tiles: button size and offsets from the Figma export */
+.tile h3,.tile .btn{top:var(--dy,0px)}
+.tile .btn{width:min(254px,14.7vw);height:54px;padding:0;font-size:14px}
+/* gallery strip: tile sizes and gaps from the Figma export */
+@media(min-width:961px){.strip{grid-template-columns:repeat(4,361px) 261px;gap:6px;background:#f2f1ee}}
+.arrows button{font-size:33px}
+@media(min-width:961px){.strip{grid-template-columns:repeat(4,360.5px) 262px;background:#eceef0}}
+.faqs.nosoc{padding-bottom:59px}
+
+.hero.baked::before{display:none}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* phones: relax the fixed desktop spacing */
+@media(max-width:960px){
+.fsec.pos .ft{padding:44px 24px!important;margin:0}
+.fsec.pos .ft .eyebrow{margin-bottom:10px!important}.fsec.pos .ft h2{margin:0 0 22px!important;font-size:clamp(30px,8vw,44px)!important;white-space:normal}
+.fsec.pos .ft p{margin-top:0!important;max-width:none!important;font-size:17px!important;line-height:1.8!important}.fsec.pos .ft p+p{margin-top:16px!important}
+.fsec.pos .ft .btns{margin-top:28px!important}
+.contact .cl{margin-top:0}.contact .cl .eyebrow,.contact .cl h2{margin-bottom:12px!important}.contact .wrap.split .cl p{font-size:17px;line-height:1.8}.contact .wrap.split .cl .cd{margin-top:12px}.contact .wrap.split .cl .cd.first{margin-top:24px}
+.contact .cl h2{font-size:clamp(32px,9vw,48px);white-space:normal}
+.tile h3,.tile .btn{top:0}.tile .btn{width:auto;padding:0 28px;height:44px}
+.faq-home .wrap.w,.faq-about .wrap.w{margin-left:auto;margin-right:auto;max-width:calc(100% - 40px)}
+.cta{height:auto;padding:80px 20px 70px}.cta .btns{padding-right:0}
+.legal{height:auto;padding:24px 0 30px;margin-top:30px}
+footer .wrap{padding:0 24px}
+}
+
+/* ===== redesigned facility pages (design coordinates at 1728px, scaled by --k) ===== */
+:root{--k:1}
+.detail{background:var(--cream);height:calc(var(--sh)*1px*var(--k))}
+.detail .din{position:relative;max-width:1728px;margin:0 auto;height:100%}
+.detail .dt{position:absolute;left:calc(var(--tx)*1px*var(--k));top:calc(var(--tt)*1px*var(--k));width:calc(var(--tw)*1px*var(--k))}
+.detail .eyebrow{font-size:calc(15px*var(--k));letter-spacing:var(--els,.28em);line-height:1.2;margin:0 0 calc(var(--emb)*1px*var(--k));color:#6f7d8c;white-space:nowrap}
+.detail h2{font-size:calc(var(--hfs,64)*1px*var(--k));letter-spacing:-.015em;line-height:1.1;margin:0 0 calc(var(--hmb)*1px*var(--k));white-space:nowrap}
+.detail p{font-size:calc(25px*var(--k));line-height:calc(38px*var(--k));margin:0 0 calc(var(--pgm)*1px*var(--k));color:var(--gray)}
+.detail p:last-of-type{margin-bottom:calc(var(--bmt)*1px*var(--k))}
+.detail .btns{margin:0}.detail .dbtn{width:calc(243px*var(--k));height:calc(52px*var(--k));padding:0;font-size:calc(14px*var(--k))}
+.detail .dph{position:absolute;left:calc(var(--l)*1px*var(--k));top:calc(var(--t)*1px*var(--k));width:calc(var(--w)*1px*var(--k));height:calc(var(--h)*1px*var(--k));background-size:cover;background-position:center}
+@media(max-width:960px){
+.detail{height:auto;padding:44px 24px 50px}.detail .din{height:auto;display:flex;flex-direction:column}
+.detail .dt{position:static;width:auto}.detail .eyebrow{font-size:13px;white-space:normal;margin-bottom:10px}
+.detail h2{font-size:clamp(30px,8vw,44px);white-space:normal;margin-bottom:22px}.detail p{font-size:17px;line-height:1.8;margin-bottom:16px}.detail p:last-of-type{margin-bottom:28px}
+.detail .dbtn{width:auto;padding:0 28px;height:48px;font-size:13px}
+.detail .dph{position:static;width:100%;height:auto;aspect-ratio:var(--w)/var(--h);margin-top:24px;order:2}
+}
+
+/* ===== final design: logo, cream contact, footer brand ===== */
+header{padding-left:clamp(20px,2.84vw,49px)}
+.logo{display:block;line-height:0;padding:0}.logo img{width:81px;height:53px;display:block}
+footer .fbrand{display:block;line-height:0;margin-top:0}footer .fbrand img{width:85px;height:55px;display:block}
+footer .wrap>div:first-child p{margin-top:26px;max-width:340px}
+.contact{background:var(--cream)}
+.faq-home .wrap.w,.faq-about .wrap.w{}
+header{padding-left:clamp(20px,2.72vw,47px)}.logo{margin-top:4px}.logo img{width:85px;height:55px}
+footer .fbrand{margin-top:15px;margin-left:3px}footer .wrap>div:first-child p{margin-top:25px}
+.exp{padding-top:130px}.exp h2{margin-bottom:110px}.exp .wrap.w{max-width:none;margin-left:clamp(20px,9.5vw,164px)}
+.faqs h2{margin-top:19px}
+.faqs h2{margin-top:12px!important}
+.faqs.hd{padding-bottom:57px}.faqs.nosoc{padding-bottom:54px}
+header.home{background:#7c97b4}
+
+.detail{padding:0!important}
+.arrows button{color:#240d15}
+
+/* ===== responsive scaling (fixes spacing on laptop widths) ===== */
+@media(min-width:961px){
+.fsec.pos .fp{aspect-ratio:auto;position:relative}
+.fsec.pos .fp::before{content:"";display:block;padding-top:calc(var(--ard,1)*100%)}
+.fsec.pos{align-items:start}
+.fsec.pos .ft{align-self:start;padding-top:calc(var(--pt,0px)*var(--k,1));padding-bottom:calc(90px*var(--k,1));padding-right:calc(24px*var(--k,1));padding-left:calc(var(--pl,86px)*var(--k,1))}
+.fsec.pos .ft .eyebrow{font-size:max(11px,calc(var(--e,16)*1px*var(--k,1)));margin:0 0 calc(var(--emb,0px)*var(--k,1))}
+.fsec.pos .ft h2{font-size:max(28px,calc(var(--h,64)*1px*var(--k,1)));line-height:1.1;margin:0 0 calc(var(--hmb,40px)*var(--k,1));max-width:none;white-space:nowrap}
+.fsec.pos .ft p{font-size:max(15px,calc(var(--pf,20)*1px*var(--k,1)));line-height:1.9;max-width:calc(var(--pw,656px)*var(--k,1));margin:0}
+.fsec.pos .ft p+p{margin-top:calc(var(--pg,38px)*var(--k,1))}
+.fsec.pos .ft .btns{margin-top:calc(var(--bmt,46px)*var(--k,1))}
+#pilates.fsec.pos .ft h2{white-space:normal;max-width:calc(620px*var(--k,1));line-height:1.0625}
+.fsec.club.pos .ft{align-self:center;padding-top:0;padding-bottom:0}
+/* pink strip scales with the page */
+.feat{height:calc(171px*var(--k,1))}
+.feat div{font-size:max(17px,calc(25px*var(--k,1)));white-space:nowrap}
+.feat img.i1{width:calc(61px*var(--k,1));height:auto;margin-right:calc(23px*var(--k,1))}
+.feat img.i2{width:calc(62px*var(--k,1));height:auto;margin-right:calc(31px*var(--k,1));margin-left:calc(8px*var(--k,1));transform:translateY(calc(-5px*var(--k,1)))}
+.feat img.i3{width:calc(66px*var(--k,1));height:auto;margin-right:calc(23px*var(--k,1));margin-left:calc(1px*var(--k,1))}
+/* other vertical rhythm */
+.exp{padding-top:calc(130px*var(--k,1));padding-bottom:calc(72px*var(--k,1))}.exp h2{margin-bottom:calc(110px*var(--k,1))}
+.faqs.top{padding-top:calc(134px*var(--k,1))}
+.detail .eyebrow{font-size:max(10px,calc(15px*var(--k)))}
+}
+/* menu: even spacing */
+header nav,header.sub nav,header.home nav{gap:40px}
+header nav a:last-child{margin-left:0}
+@media(min-width:961px){.fsec.pos .fp{align-self:stretch}}
+@media(min-width:961px){.fsec.pos .ft p{font-size:max(16px,calc(var(--pf,20)*1px*var(--k,1)))}}
+@media(max-width:960px){.fsec.pos .ft .eyebrow{font-size:12px!important}}

@@ -8,9 +8,13 @@ const btns=isHome?`<a class="btn" href="${WA}">Book Pool Access</a><a class="btn
 document.body.insertAdjacentHTML('afterbegin',`<header class="${isHome?'home':'sub'}"><a class="logo" href="index.html"><img src="images/logo.svg" alt="Sky Ladies Club" width="85" height="55"></a>
 <nav id="nav">${navLinks}</nav>
 <div class="hbtns">${btns}</div>
-<button class="menu" aria-expanded="false">Menu</button></header>`);
+<button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button></header>`);
 const h=document.querySelector('header'),m=document.querySelector('.menu');
-m.onclick=()=>{const o=h.classList.toggle('open');m.setAttribute('aria-expanded',o)};
+const setMenu=o=>{h.classList.toggle('open',o);document.body.classList.toggle('menu-open',o);m.setAttribute('aria-expanded',o);m.setAttribute('aria-label',o?'Close menu':'Open menu')};
+m.onclick=()=>setMenu(!h.classList.contains('open'));
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+addEventListener('resize',()=>{if(innerWidth>960)setMenu(false)});
 document.body.insertAdjacentHTML('beforeend',`<section class="cta"><h2>Begin your <b>ascent</b></h2><p>Reserve a pool session or explore experiences across the club.</p>
 <div class="btns"><a class="btn" href="${WA}">Book Pool Access</a><a class="btn" href="${WA}">Book a Class</a></div></section>
 <footer><div class="wrap"><div><a class="fbrand" href="index.html"><img src="images/logo.svg" alt="Sky Ladies Club" width="85" height="55"></a><p>Ladies-Only Rooftop Pool &amp; Studios in Sharjah</p></div>
